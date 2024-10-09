@@ -27,7 +27,7 @@ Placard is built and tested for iOS 17.2 and onward only.
 
 ## Running Placard via the PlacardDemo project
 
-The PlacardDemo project allows you to explore Placard, both the default options and by changing the configuration:
+The [PlacardDemo app](https://github.com/ccavnor/PlacardDemo) allows you to explore Placard, both the default options and by changing the configuration:
 
 Download the zip of this repository and extract it. 
 Run PlacardDemo.xcodeproj and choose either iphone or ipad as targets for the simulator (see Requirements section for required xcode builds).
@@ -43,9 +43,9 @@ either via the Swift Package Manager or manually:
 
 Go to File | Swift Packages | Add Package Dependency... in Xcode and search for "Placard".
 
-### Manually:
+### From the Swift Package Index:
 
-(TBD)
+Get Placard from the [Swift Package Index](https://swiftpackageindex.com/ccavnor/Placard)
 
 ## Usage
 Using Placard is straight forward, but it helps to know that Placard is composed of three views that you can use:
