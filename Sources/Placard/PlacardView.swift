@@ -204,7 +204,7 @@ public struct PlacardView: View {
     private var duration: Double
     private var action: TapAction?
 
-    init(title: String,
+    public init(title: String,
          statusMessage: String,
          systemImageName: String? = "",
          config: PlacardConfigP? = nil,
@@ -256,7 +256,7 @@ public struct PlacardPriorityView: UIViewRepresentable {
 
     private let content: UIView
 
-    init(title: String,
+    public init(title: String,
          statusMessage: String,
          systemImageName: String = "",
          config: PlacardConfigP = PlacardConfig(),
@@ -341,7 +341,7 @@ public struct PlacardCustomView<Content>: UIViewRepresentable where Content: Vie
     private var duration: Double
     private var action: TapAction?
 
-    init(title: String,
+    public init(title: String,
          statusMessage: String,
          config: PlacardConfigP?,
          delay: Double = Placard.DEFAULT_DELAY,

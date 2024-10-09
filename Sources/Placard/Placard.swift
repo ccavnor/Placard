@@ -26,11 +26,11 @@ public final class Placard: UIView {
     let logger = Logger(subsystem: Logger.subsystem, category: "Placard")
 
     /// time to wait after user interaction (tap) before hiding view
-    static let DEFAULT_DELAY: TimeInterval = .zero
+    public static let DEFAULT_DELAY: TimeInterval = .zero
     /// amount of time to show the Placard view before auto-hiding
-    static let DEFAULT_SHOW_DURATION: TimeInterval = .infinity
+    public static let DEFAULT_SHOW_DURATION: TimeInterval = .infinity
     /// amount of time for the show and hide animations to execute (note that if no animation is used, the view appears and disappears immediately)
-    static let DEFAULT_ANIMATION_DURATION: TimeInterval = 1.25
+    public static let DEFAULT_ANIMATION_DURATION: TimeInterval = 1.25
 
     // get the top window to ensure that other views don't obscure actions
     var activeWindow: UIWindow? {
