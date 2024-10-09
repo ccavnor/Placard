@@ -61,10 +61,10 @@ public struct PlacardConfig: PlacardConfigP {
     private var _textColor: UIColor?
     private var _placement: PlacardPlacement?
     private var _insets: UIEdgeInsets?
-    public var _showAnimation: TransitionAnimation?
-    public var _hideAnimation: TransitionAnimation?
-    public var _tapAnimation: TapAnimation?
-    public var _fadeAnimation: Bool?
+    private var _showAnimation: TransitionAnimation?
+    private var _hideAnimation: TransitionAnimation?
+    private var _tapAnimation: TapAnimation?
+    private var _fadeAnimation: Bool?
 
     /// Background color (as a UIColor) for the Placard view
     public var backgroundColor: UIColor? {
@@ -141,7 +141,7 @@ public struct PlacardConfig: PlacardConfigP {
         set { _fadeAnimation = newValue ?? PlacardConfigCase.default.fadeAnimation }
     }
 
-    init(backgroundColor: UIColor? = nil,
+    public init(backgroundColor: UIColor? = nil,
          primaryFont: UIFont? = nil,
          secondaryFont: UIFont? = nil,
          accentColor: UIColor? = nil,

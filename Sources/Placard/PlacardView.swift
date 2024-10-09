@@ -196,7 +196,7 @@ fileprivate struct CustomPlacardViewTemplate: View {
 // =================== UIViewRepresentable ========================
 
 /// Default View handler - same as calling PlacardPriorityView with priority of .default
-struct PlacardView: View {
+public struct PlacardView: View {
     private let title: String
     private let message: String
     private let systemImageName: String?
@@ -219,7 +219,7 @@ struct PlacardView: View {
         self.action = action
     }
 
-    var body: some View {
+    public var body: some View {
         PlacardPriorityView(title: title,
                             statusMessage: message,
                             systemImageName: systemImageName!,
@@ -245,7 +245,7 @@ struct PlacardView: View {
  a view height larger than landscape orientation requires.
  */
 /// View handler for provided placard views (handles the processing of both  PlacardPriorityView and PlacardView)
-struct PlacardPriorityView: UIViewRepresentable {
+public struct PlacardPriorityView: UIViewRepresentable {
     private let title: String
     private let statusMessage: String
     private let systemImageName: String?
@@ -321,18 +321,18 @@ struct PlacardPriorityView: UIViewRepresentable {
         self.content.backgroundColor = .clear
     }
 
-    func makeUIView(context: Context) -> UIView {
+    public func makeUIView(context: Context) -> UIView {
         return UIView()
     }
 
-    func updateUIView(_ uiView: UIView, context: Context) {
+    public func updateUIView(_ uiView: UIView, context: Context) {
         content.translatesAutoresizingMaskIntoConstraints = false
         _=Placard(content: content, config: config, title: title, statusMessage: statusMessage, duration: duration, action: action)
     }
 }
 
 /// View handler for custom (user-provided) views
-struct PlacardCustomView<Content>: UIViewRepresentable where Content: View {
+public struct PlacardCustomView<Content>: UIViewRepresentable where Content: View {
     private let title: String
     private let statusMessage: String
     private let content: UIView
@@ -361,11 +361,11 @@ struct PlacardCustomView<Content>: UIViewRepresentable where Content: View {
         self.action = action
     }
 
-    func makeUIView(context: Context) -> UIView {
+    public func makeUIView(context: Context) -> UIView {
         return UIView()
     }
 
-    func updateUIView(_ uiView: UIView, context: Context) {
+    public func updateUIView(_ uiView: UIView, context: Context) {
         content.translatesAutoresizingMaskIntoConstraints = false
         let _config = self.config ?? PlacardConfigCase.default
         _=Placard(content: content, config: _config, duration: duration, action: action)
