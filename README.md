@@ -1,3 +1,7 @@
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fccavnor%2FPlacard%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/ccavnor/Placard)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fccavnor%2FPlacard%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/ccavnor/Placard)
+
+
 <img src="https://github.com/user-attachments/assets/db1c4f28-a737-45c0-907b-17b899c8e896" alt="Placard logo" style="width:150px;height:150px;">
 
 # ``Placard``
