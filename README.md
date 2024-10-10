@@ -6,6 +6,8 @@
 
 # ``Placard``
 
+[API documentation available here](https://ccavnor.github.io/Placard/)
+
 Placard is a small and easy to use package for presenting an animated message bar using SwiftUI.
 
 Message views can be displayed at the top, bottom, or center of the screen and can be offset from both the screen edges and the vertical placements using UIEdgeInsets.
