@@ -6,7 +6,7 @@
 
 # ``Placard``
 
-[API documentation available here](https://ccavnor.github.io/Placard/)
+[API documentation available here](https://ccavnor.github.io/Placard/documentation/placard/)
 
 Placard is a small and easy to use package for presenting an animated message bar using SwiftUI.
 
